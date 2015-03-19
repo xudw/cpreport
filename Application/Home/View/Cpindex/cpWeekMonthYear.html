@@ -1,0 +1,67 @@
+<include file="Public::header" />
+<div id="main">
+    <div id="left">
+        <div id="menu_sty">
+            <div id="munu_sty_s">
+                <include file="Public::menu" />
+            </div>
+        </div>
+    </div>
+    <div id="right">
+        <div id="titles">
+            <div id="titles_sty">CP周、月、年报
+            </div>
+        </div>
+        <div id="cpinfor">  <span class="cpinfor_sty">{$cpname}</span> </div>
+        <div id="cpnuminfor">
+            <div class="cptable">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <th>CP上周播放量</th>
+                        <th>手机电视上周播放量</th>
+                        <th>CP播放占比</th>
+                    </tr>
+                    <tr>
+                        <td>{$show.week.cplay}</td>
+                        <td>{$show.week.dopoolplay}</td>
+                        <td>{$show.week.per}</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="cptable">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <th>CP上月播放量</th>
+                        <th>手机电视上月播放量</th>
+                        <th>CP播放占比</th>
+                    </tr>
+                    <tr>
+                        <td>{$show.month.cplay}</td>
+                        <td>{$show.month.dopoolplay}</td>
+                        <td>{$show.month.per}</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="cptable">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <th>CP上年播放量</th>
+                        <th>手机电视上年播放量</th>
+                        <th>CP播放占比</th>
+                    </tr>
+                    <tr>
+                        <td>{$show.year.cplay}</td>
+                        <td>{$show.year.dopoolplay}</td>
+                        <td>{$show.year.per}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="footer">
+    <include file="Public::footer" />
+</div>
+</body>
+</html>

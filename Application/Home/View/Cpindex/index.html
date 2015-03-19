@@ -1,1 +1,33 @@
-<include file="Public::menu" />
+<include file="Public::header" />
+<div id="main">
+    <div id="left">
+        <div id="menu_sty">
+            <div id="munu_sty_s">
+                <include file="Public::menu" />
+            </div>
+        </div>
+    </div>
+    <div id="right">
+        <div id="titles">
+            <div id="titles_sty">CP日报</div>
+        </div>
+        <div id="cpinfor"> <span class="cpinfor_sty">{$yesterday}</span> <span class="cpinfor_sty">{$cpname}</span> </div>
+        <div id="cpnuminfor">
+            <span class="cpnuminfor_sty">CP播放数：{$show_infor.cplay}</span>
+            <span class="cpnuminfor_sty">手机电视播放数：{$show_infor.dopoolplay}</span>
+            <span class="cpnuminfor_sty">CP播放占比：{$show_infor.per}</span>
+            <span class="cpnuminfor_sty">频道数量：{$show_infor.muchvideo}</span>
+        </div>
+        <div id="drawline"></div>
+        <div id="changek">
+            广告订单列表&nbsp;&nbsp;<input type="text" id="orders" style="width:100px;height:30px;">
+        </div>
+        <div id="orange"></div>
+    </div>
+</div>
+<div id="footer">
+    <include file="Public::footer" />
+</div>
+</body>
+</html>
+

@@ -64,6 +64,8 @@ class LoginPageController extends Controller
                 $_SESSION[C("USER_AUTN_KEY")] = $val['nickname'];
                 $_SESSION['role'] = $val['roleid'];
                 $_SESSION['email'] = $val['email'];
+				$_SESSION['cpname'] = $val['cpname'];
+				$_SESSION['cpid'] = $val['cpid'];
                 $_SESSION['uid'] = $val['id'];
 
                 $url = "/cpreport/index.php/Home/Cpindex/index";

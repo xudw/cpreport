@@ -66,20 +66,55 @@
     </div>
     <div id="right">
         <div id="titles">
-            <div id="titles_sty">CP日报</div>
+            <div id="titles_sty">CP周、月、年报
+            </div>
         </div>
-        <div id="cpinfor"> <span class="cpinfor_sty"><?php echo ($yesterday); ?></span> <span class="cpinfor_sty"><?php echo ($cpname); ?></span> </div>
+        <div id="cpinfor">  <span class="cpinfor_sty"><?php echo ($cpname); ?></span> </div>
         <div id="cpnuminfor">
-            <span class="cpnuminfor_sty">CP播放数：<?php echo ($show_infor["cplay"]); ?></span>
-            <span class="cpnuminfor_sty">手机电视播放数：<?php echo ($show_infor["dopoolplay"]); ?></span>
-            <span class="cpnuminfor_sty">CP播放占比：<?php echo ($show_infor["per"]); ?></span>
-            <span class="cpnuminfor_sty">频道数量：<?php echo ($show_infor["muchvideo"]); ?></span>
+            <div class="cptable">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <th>CP上周播放量</th>
+                        <th>手机电视上周播放量</th>
+                        <th>CP播放占比</th>
+                    </tr>
+                    <tr>
+                        <td><?php echo ($show["week"]["cplay"]); ?></td>
+                        <td><?php echo ($show["week"]["dopoolplay"]); ?></td>
+                        <td><?php echo ($show["week"]["per"]); ?></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="cptable">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <th>CP上月播放量</th>
+                        <th>手机电视上月播放量</th>
+                        <th>CP播放占比</th>
+                    </tr>
+                    <tr>
+                        <td><?php echo ($show["month"]["cplay"]); ?></td>
+                        <td><?php echo ($show["month"]["dopoolplay"]); ?></td>
+                        <td><?php echo ($show["month"]["per"]); ?></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="cptable">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <th>CP上年播放量</th>
+                        <th>手机电视上年播放量</th>
+                        <th>CP播放占比</th>
+                    </tr>
+                    <tr>
+                        <td><?php echo ($show["year"]["cplay"]); ?></td>
+                        <td><?php echo ($show["year"]["dopoolplay"]); ?></td>
+                        <td><?php echo ($show["year"]["per"]); ?></td>
+                    </tr>
+                </table>
+            </div>
         </div>
-        <div id="drawline"></div>
-        <div id="changek">
-            广告订单列表&nbsp;&nbsp;<input type="text" id="orders" style="width:100px;height:30px;">
-        </div>
-        <div id="orange"></div>
+
     </div>
 </div>
 <div id="footer">

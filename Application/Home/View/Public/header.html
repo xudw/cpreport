@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>数据系统--CP报表</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="format-detection" content="telephone=no"/>
+
+
+    <load href="/cpreport/Public/jquery.custom/css/ui-lightness/jquery-ui-1.8.11.custom.css" />
+    <load href="/cpreport/Public/jquery.custom/js/jquery-ui-1.8.11.custom.min.js" />
+    <load href="/cpreport/Public/jquery.custom/js/ui.datepicker-zh.js" />
+    <load href="/cpreport/Public/javascript/jquery-ui-timepicker-addon.js" />
+
+    <load href="/cpreport/Public/jquery-1.11.1.min.js" />
+
+    <script type="text/javascript" src="/cpreport/Public/tokeninput/src/jquery.tokeninput.js"></script>
+    <link rel="stylesheet" href="/cpreport/Public/tokeninput/styles/token-input-error.css" type="text/css" />
+    <link rel="stylesheet" href="/cpreport/Public/tokeninput/styles/token-input-facebook-error.css" type="text/css" />
+
+    <link rel="stylesheet" type="text/css" href="/cpreport/Public/css/main.css">
+
+</head>
+<body>    
+    <div id="header_top">
+        <div id="header_top_sty">
+            <div style='float: left;margin-left: 20px;font-weight: bold;color: #747474;'>数据系统--CP报表系统</div>
+            <div style='color: #747474;float: right;margin-right: 20px;font-size: 14px;'><?php echo $_SESSION[C("USER_AUTN_KEY")]; ?> | <a style="color: #747474;text-decoration:none;" href="/cpreport/index.php/Home/LoginPage/logout">退出</a></div>
+        </div>
+    </div>
+    <div style='clear:both;'></div>

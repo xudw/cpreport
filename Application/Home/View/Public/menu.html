@@ -6,7 +6,8 @@
     <li>财务管理</li>
 </ul>
 <ul>
-    <li>CP日报</li>
+    <li><a href="/cpreport/index.php/Home/Cpindex/index">CP日报</a></li>
+    <li><a href="/cpreport/index.php/Home/Cpindex/cpWeekMonthYear">CP周、月、年报</a></li>
 </ul>
 <ul>
     <li>dopool</li>
@@ -18,8 +19,7 @@
 <!--CP权限-->
 <?php }elseif($_SESSION['role']=='2'){ ?>
 <ul>
-    <li>dopool</li>
+    <li><a href="/cpreport/index.php/Home/Cpindex/index">CP日报</a></li>
+    <li><a href="/cpreport/index.php/Home/Cpindex/cpWeekMonthYear">CP周、月、年报</a></li>
 </ul>
 <?php } ?>
-
-<a href="/cpreport/index.php/Home/LoginPage/logout">退出</a>
